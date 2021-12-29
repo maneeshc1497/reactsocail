@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: silver;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    align-items: center;
+    
+}
+.logo{
+    align-self: center;
+    margin: 10px;
+    color: #a80e35;
+    
+}
+.navbar_img{
+    height: 35px;
+    border-radius: 5px;
+
+}

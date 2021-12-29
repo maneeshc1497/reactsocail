@@ -1,0 +1,19 @@
+.signInBtn{
+    
+     background-color: white;  
+    cursor: pointer;
+    color: #a80e35;
+    max-width: fit-content;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px;
+    box-shadow: 1px 1px rgba(3, 79 , 160, 0.2);
+}
+.signInBtn:hover{
+    background-color: #a80e35;
+    color: white;
+    transition: all 0.2s;
+}

@@ -1,0 +1,28 @@
+.commentInput{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.commentInput_text{
+    border: none;
+    resize: none;
+    width: 100%;
+    font-family: 'Poppins',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+    
+  font-size: 14px;
+}
+.commentInput_text:focus{
+    outline: none;
+}
+.commentInput > button{
+    background-color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
