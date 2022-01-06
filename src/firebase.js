@@ -1,5 +1,9 @@
-import firebase from 'firebase'
-
+ import firebase from 'firebase/app';
+ import 'firebase/database'; 
+ import 'firebase/storage';  
+ import 'firebase/firestore';
+ import 'firebase/auth';
+ 
 const firebaseConfig = {
     apiKey: "AIzaSyDBTJ2pf8e5ADTZCOCrs6q1teWkOPeo9O4",
     authDomain: "reactsocial-db5cb.firebaseapp.com",
@@ -11,8 +15,8 @@ const firebaseConfig = {
 
   const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-  const db= firebaseApp.firestore();
-  const auth= firebase.auth();
+  const db= firebaseApp.firestore();  
+  const auth= firebase.auth();  
   const storage= firebase.storage();
 
   const provider= new firebase.auth.GoogleAuthProvider();
