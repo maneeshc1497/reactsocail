@@ -28,7 +28,9 @@ export default function CommentInput({id,comments}) {
             value={commentInput}
             placeholder="comment something"
             onChange={(e)=>{setCommentInput(e.target.value)}}></textarea>
-            <button onClick={onhandlecommentPost}>post</button>
+            <button 
+            disabled={user ? false:true}
+            onClick={onhandlecommentPost}>post</button>
         </div>
     )
 }

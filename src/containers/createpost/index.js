@@ -107,8 +107,7 @@ function CreatePost() {
               </div>
               <button
                 className="createpost_uploadBtn"
-                onClick={onhandleUpload}
-                style={{ color: text ? "black" : "lightgrey" }}
+                onClick={onhandleUpload}                
                 disabled={text ? false:true}
                 
               >

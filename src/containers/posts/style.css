@@ -16,6 +16,7 @@
     background-color: white;
     border-radius: 8px;
     padding: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .posts_headerleft > img{
     height: 30px;

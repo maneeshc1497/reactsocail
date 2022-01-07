@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React,{useContext,useState} from 'react'
 import { Comment, CommentInput } from '../../components'
 import { UserContext } from '../../context/user'
 import { db, storage } from '../../firebase'
@@ -11,9 +11,22 @@ export default function Posts({
     content,
     comments
 }) {
+    const [user, setUser] = useContext(UserContext).user;
+            
     const deletePost=()=>{
-         storage.refFromURL(imageURL).delete();
-         db.collection("posts").doc(id).delete();
+         if(user != null)
+         {
+            if(userName==user.email.substr(0,user.email.indexOf('@')))
+            {
+                storage.refFromURL(imageURL).delete();
+                db.collection("posts").doc(id).delete();                
+            }
+            else{
+               alert('cannot delete others posts');
+            }
+         } else{
+            alert('sign in to delete');
+         }          
     }
 
     return (

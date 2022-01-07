@@ -1,5 +1,6 @@
 import React,{useContext} from 'react'
 import { SignInBtn } from '../../components'
+import  Signout  from '../../components/Signout/index'
 import { UserContext } from '../../context/user'
 import './style.css'
 
@@ -9,7 +10,8 @@ function Navbar() {
     return (
         <div className="navbar">
             <h3 className="logo">React Social</h3>            
-            {user ? <img className="navbar_img" src={user.photoURL}/>:<SignInBtn />}
+            {user ? <Signout/>:<SignInBtn />}
+            
         </div>
     )
 }
