@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <UserContextProvider>
         <div className="home">
-        <NavBar/>
+        <NavBar/>        
         <CreatePost/>
         <Feed/>
         </div>
